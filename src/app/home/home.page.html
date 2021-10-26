@@ -1,0 +1,106 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Calcul IMC <ion-icon name="analytics-outline"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">
+        Calcul IMC <ion-icon name="analytics-outline"></ion-icon>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+
+    <br/>
+    
+    <ion-list>
+      <ion-list-header>
+        Indiquez votre masse:
+        {{taille}} cm
+      </ion-list-header>
+  
+      <ion-item>
+        <ion-range min="100" max="250" step="1" value="150" snaps color="danger" [(ngModel)]="taille" (ionChange)="progression()">
+          <ion-icon slot="start" size="small" color="danger" name="accessibility-outline"></ion-icon>
+          <ion-icon slot="end" color="danger" name="accessibility-outline"></ion-icon>
+        </ion-range>
+      </ion-item>
+    </ion-list>
+
+    <br />
+  
+    <ion-list>
+      <ion-list-header>
+        Indiquez votre masse:
+        {{masse}} Kg
+      </ion-list-header>
+  
+      <ion-item>
+        <ion-range min="0" max="200" step="0.5" value="0" snaps color="danger" [(ngModel)]="masse" (ionChange)="progression()">
+          <ion-icon slot="start" size="small" color="danger" name="accessibility-outline"></ion-icon>
+          <ion-icon slot="end" color="danger" name="accessibility-outline"></ion-icon>
+        </ion-range>
+      </ion-item>
+    </ion-list>
+  
+    <br />
+  
+    <ion-button color="success" fill="outline" shape="round" *ngIf = "peutCalculer" (click)="calculIMC()">
+      Calculez votre IMC
+      <ion-icon name="calculator-outline"></ion-icon>
+    </ion-button>
+
+    <br />
+  
+    <ion-card>
+
+      <ion-card-header>
+
+        <ion-card-subtitle>
+          <ion-badge color="light">
+            <ion-text>
+              <ion-icon name="barbell-outline"></ion-icon>
+              Analyse de votre IMC
+              <ion-icon name="barbell-outline"></ion-icon>
+            </ion-text>
+          </ion-badge>
+        </ion-card-subtitle>
+
+        <ion-card-title *ngIf="imc > -1">{{imc}}</ion-card-title>
+
+        <ion-card-title *ngIf="imc < 0">
+          <ion-badge color="{{progres.couleur}}">
+            <ion-icon name="analytics-outline"></ion-icon>
+            {{progres.message}}
+          </ion-badge>
+          <ion-progress-bar buffer="{{progres.statut}}" color="{{progres.couleur}}" value="{{progres.statut}}">
+          </ion-progress-bar>
+        </ion-card-title>
+        
+      </ion-card-header>
+  
+      <ion-card-content *ngIf="analyse">
+        <ion-badge color="{{analyse.couleur}}">
+          <ion-icon name="analytics-outline"></ion-icon> -
+          {{analyse.message}}
+        </ion-badge>
+      </ion-card-content>
+
+    </ion-card>
+
+  </div>
+</ion-content>
+
+<!-- fab placed to the bottom end -->
+<ion-fab horizontal="end" vertical="bottom" slot="fixed" [routerLink]="['/about']">
+  <ion-fab-button color="light">
+    <ion-icon name="help-circle-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
