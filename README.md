@@ -4,10 +4,10 @@
 
 ## Sommaire
 
-- [Résumé](#Résumé)
-- [Prérequis](#Prérequis)
-- [Test](#Test)
-- [L'application](#L'application)
+- [Résumé](#résumé)
+- [Prérequis](#prérequis)
+- [Test](#test)
+- [L'application](#lapplication)
 
 ---
 
@@ -51,7 +51,7 @@ Exécuter la commande `adb devices` pour détecter votre smartphone.
 Exécuter la commande `ionic run android` pour tester l'application sur votre smartphone (ne pas débrancher l'appareil avant la fin de l'exécution!).
 
 ### Directement avec l'APK (`Android uniquement`)
-1. Récupérer le fichier APK (`IONIC-IMC/android/app/outputs/apk\debug/app-debug.apk`).
+1. Récupérer le fichier APK ([`IONIC-IMC/android/app/outputs/apk\debug/app-debug.apk`](/android/app/build/outputs/apk/debug/app-debug.apk)).
 2. Brancher votre smartphone à votre machine.
 3. Déplacer ou copieR le fichier .apk sur le stockage de votre smartphone.
 4. Sur votre smartphone, utilisez l'explorateur de fichiers pour trouver le fichier à l'emplacement choisi, puis cliquez desssus pour l'installer.
