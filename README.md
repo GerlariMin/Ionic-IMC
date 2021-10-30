@@ -1,7 +1,5 @@
 # Ionic-IMC
 
----
-
 ## Sommaire
 
 - [Résumé](#résumé)
@@ -60,19 +58,25 @@ Exécuter la commande `ionic run android` pour tester l'application sur votre sm
 ## L'application
    
 ![Capture d'écran 1](/ressourcesReadme/IonicIMC-001.png)   
+
 Au lancement de l'application, la page du calcul de l'IMC apparaît.
 
 ![Capture d'écran 2](/ressourcesReadme/IonicIMC-002.png)   
+
 Une barre de progression indque visuellement à l'utilisateur quand il pourra lancer le calcul.
 
 ![Capture d'écran 3](/ressourcesReadme/IonicIMC-003.png)
+
 Une fois toutes les données remplies, l'utilisateur peut calculer son IMC.
 
 ![Capture d'écran 4](/ressourcesReadme/IonicIMC-004.png)
+
 La barre de progression est alors remplacée par le résultat du calcul.
 
 ![Capture d'écran 5](/ressourcesReadme/IonicIMC-005.png)
+
 Quand l'utilisateur appuie sur le bouton `?`, il peut accéder à une fiche explicative des différents résultats possibles.
 
 ![Capture d'écran 6](/ressourcesReadme/IonicIMC-006.png)   
+
 En cliquant sur ce logo, cela vous redirigera sur la page web de [imc.fr](https://www.imc.fr/calcul) pour avoir plus de renseignements sur l'IMC.
