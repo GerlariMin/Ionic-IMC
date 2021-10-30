@@ -49,7 +49,7 @@ Exécuter la commande `adb devices` pour détecter votre smartphone.
 Exécuter la commande `ionic run android` pour tester l'application sur votre smartphone (ne pas débrancher l'appareil avant la fin de l'exécution!).
 
 ### Directement avec l'APK (`Android uniquement`)
-1. Récupérer le fichier APK ([`IONIC-IMC/android/app/outputs/apk\debug/app-debug.apk`](/android/app/build/outputs/apk/debug/app-debug.apk)).
+1. Récupérer le fichier APK ([`IONIC-IMC/ressourcesReadme/apk/app-debug.apk`](/ressourcesReadme/apk/app-debug.apk)).
 2. Brancher votre smartphone à votre machine.
 3. Déplacer ou copieR le fichier .apk sur le stockage de votre smartphone.
 4. Sur votre smartphone, utilisez l'explorateur de fichiers pour trouver le fichier à l'emplacement choisi, puis cliquez desssus pour l'installer.
@@ -57,26 +57,26 @@ Exécuter la commande `ionic run android` pour tester l'application sur votre sm
 
 ## L'application
    
-![Capture d'écran 1](/ressourcesReadme/IonicIMC-001.png)   
+![Capture d'écran 1](/ressourcesReadme/images/IonicIMC-001.png)   
 
 Au lancement de l'application, la page du calcul de l'IMC apparaît.
 
-![Capture d'écran 2](/ressourcesReadme/IonicIMC-002.png)   
+![Capture d'écran 2](/ressourcesReadme/images/IonicIMC-002.png)   
 
 Une barre de progression indque visuellement à l'utilisateur quand il pourra lancer le calcul.
 
-![Capture d'écran 3](/ressourcesReadme/IonicIMC-003.png)
+![Capture d'écran 3](/ressourcesReadme/images/IonicIMC-003.png)
 
 Une fois toutes les données remplies, l'utilisateur peut calculer son IMC.
 
-![Capture d'écran 4](/ressourcesReadme/IonicIMC-004.png)
+![Capture d'écran 4](/ressourcesReadme/images/IonicIMC-004.png)
 
 La barre de progression est alors remplacée par le résultat du calcul.
 
-![Capture d'écran 5](/ressourcesReadme/IonicIMC-005.png)
+![Capture d'écran 5](/ressourcesReadme/images/IonicIMC-005.png)
 
 Quand l'utilisateur appuie sur le bouton `?`, il peut accéder à une fiche explicative des différents résultats possibles.
 
-![Capture d'écran 6](/ressourcesReadme/IonicIMC-006.png)   
+![Capture d'écran 6](/ressourcesReadme/images/IonicIMC-006.png)   
 
 En cliquant sur ce logo, cela vous redirigera sur la page web de [imc.fr](https://www.imc.fr/calcul) pour avoir plus de renseignements sur l'IMC.
