@@ -35,25 +35,25 @@
  - Smarphone Android: `Samsung Galaxy A3 (2017)` (`Android 8.0.0`, `Samsung Experience 9.0`, `Kernel 3.18.14`, `Knox 3.1`)
  - Environnement de développement: `Visual Studio Code` - Version `1.61.2`
 
-### Via l'invité de commandes/ Ionic
+### Via l'invite de commandes/ Ionic
 
 1. Télécharger le projet.
-2. Installer les différentes ressources nécessaires pour faire tourner Ionic sur votre machine.
-3. Ouvrir un invité de commande et accéder au répertoire du projet (`cd [chemin vers le répertoire du projet]/Ionic-IMC/`).
-4. A partir de cette étape, vous disposez de 2 options pour tester le projet:
+2. Installer les différentes ressources nécessaires pour faire tourner Ionic sur la machine.
+3. Ouvrir une invite de commandes et accéder au répertoire du projet (`cd [chemin vers le répertoire du projet]/Ionic-IMC/`).
+4. A partir de cette étape, 2 options existent pour tester le projet:
    - Tester le projet en local via le navigaeur:
-Exécuter la commande `ionic lab` (pour un aperçu application mobile IOS/ Android) ou `ionic serve` (pour un aperçu site Web).
+Exécuter la commande `ionic lab` (pour un aperçu de l'application mobile IOS/ Android) ou `ionic serve` (pour un aperçu site Web).
    - Tester le projet sur son smartphone ou via un émulateur (Android):
-Brancher votre téléphone à votre machine.
-Exécuter la commande `adb devices` pour détecter votre smartphone.
-Exécuter la commande `ionic run android` pour tester l'application sur votre smartphone (ne pas débrancher l'appareil avant la fin de l'exécution!).
+Brancher un téléphone à la machine.
+Exécuter la commande `adb devices` pour détecter le smartphone.
+Exécuter la commande `ionic run android` pour tester l'application sur le smartphone (ne pas débrancher l'appareil avant la fin de l'exécution!).
 
 ### Directement avec l'APK (`Android uniquement`)
 1. Récupérer le fichier APK ([`IONIC-IMC/ressourcesReadme/apk/app-debug.apk`](/ressourcesReadme/apk/app-debug.apk)).
-2. Brancher votre smartphone à votre machine.
-3. Déplacer ou copieR le fichier .apk sur le stockage de votre smartphone.
-4. Sur votre smartphone, utilisez l'explorateur de fichiers pour trouver le fichier à l'emplacement choisi, puis cliquez desssus pour l'installer.
-   - Si l'installation ne veut pas se faire, pensez à vérifier les paramètres du smartphone (`Paramètres` > `Sécurité` > cocher `Sources inconnues`).
+2. Brancher le smartphone à la machine.
+3. Déplacer ou copier le fichier .apk sur le stockage du smartphone.
+4. Sur le smartphone, utiliser l'explorateur de fichiers pour trouver le fichier à l'emplacement choisi, puis cliquer desssus pour l'installer.
+   - Si l'installation ne veut pas se faire, penser à vérifier les paramètres du smartphone (`Paramètres` > `Sécurité` > cocher `Sources inconnues`).
 
 ## L'application
    
@@ -63,7 +63,7 @@ Au lancement de l'application, la page du calcul de l'IMC apparaît.
 
 ![Capture d'écran 2](/ressourcesReadme/images/IonicIMC-002.png)   
 
-Une barre de progression indque visuellement à l'utilisateur quand il pourra lancer le calcul.
+Une barre de progression indique visuellement à l'utilisateur quand il pourra lancer le calcul.
 
 ![Capture d'écran 3](/ressourcesReadme/images/IonicIMC-003.png)
 
